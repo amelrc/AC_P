@@ -1,67 +1,78 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import device from "../generalStyles";
 
 export const Data = [
   {
-    question: "What do you call a dog magician?",
-    answer: "A labracadabrador.",
+    question: "Website",
+    answer: ["The Side Studio", "Hidden Focus", "Blue Star Planning"],
   },
   {
-    question: "What do you call a funny mountain?",
-    answer: "Hill-arious.",
+    question: "Software",
+    answer: ["Rubrics", "BSP"],
   },
   {
-    question: "What did the astronaut say when he crashed into the moon?",
-    answer: "I Apollo-gize.",
+    question: "Logos",
+    answer: ["Logos"],
   },
 ];
 
 const AccordionSection = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
+  height: 100vh;
   position: relative;
-  background: #fff;
 `;
 
-const Container = styled.div`
+const AccordionWrapper = styled.div`
   position: absolute;
-  top: 30%;
-  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+  width: 90%;
+  margin-top: 25%;
+  z-index: 1;
+  @media ${device.tablet} {
+    width: 70%;
+    margin-top: 15%;
+  }
 `;
 
-const Wrap = styled.div`
-  background: #272727;
-  color: #fff;
+const AccSummary = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   text-align: center;
   cursor: pointer;
-  h1 {
-    padding: 2rem;
-    font-size: 2rem;
+  font: normal normal bold 40px/60px Kumbh Sans;
+  color: #fdfde5;
+  @media ${device.tablet} {
+    font: normal normal bold 60px/80px Kumbh Sans;
   }
-  span {
-    margin-right: 1.5rem;
+  @media ${device.small} {
+    font: normal normal bold 70px/90px Kumbh Sans;
   }
 `;
 
-const Dropdown = styled.div`
-  background: #1c1c1c;
-  color: #00ffb9;
+const AccDetails = styled.div`
   width: 100%;
-  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #00ffb9;
-  border-top: 1px solid #00ffb9;
+  font: normal normal normal 30px/40px Kumbh Sans;
+  color: #fdfde5;
+  margin-left: 40px;
   p {
-    font-size: 2rem;
+    color: #fdfde5;
+    padding: 4px;
+    &: hover {
+      background: #fdfde5;
+      color: #0d0b33;
+      padding: 4px;
+    }
+  }
+  @media ${device.tablet} {
+    font: normal normal normal 40px/50px Kumbh Sans;
   }
 `;
 
@@ -79,22 +90,26 @@ const Accordion = () => {
 
   return (
     <AccordionSection>
-      <Container>
+      <AccordionWrapper>
         {Data.map((item, index) => {
           return (
             <>
-              <Wrap onClick={() => toggle(index)} key={index}>
-                <h1>{item.question}</h1>
-              </Wrap>
+              <AccSummary onClick={() => toggle(index)} key={index}>
+                {item.question}
+              </AccSummary>
               {clicked === index ? (
-                <Dropdown>
-                  <p>{item.answer}</p>
-                </Dropdown>
+                <AccDetails>
+                  {item.answer.map((a, i) => (
+                    <Link style={{ textDecoration: "none" }} to={`/menu/${a}`}>
+                      <p key={i}>{a}</p>
+                    </Link>
+                  ))}
+                </AccDetails>
               ) : null}
             </>
           );
         })}
-      </Container>
+      </AccordionWrapper>
     </AccordionSection>
   );
 };

@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
 import device from "../generalStyles";
-import styled from "styled-components";
 import TabNav from "./tabNab";
+import styled from "styled-components";
 
 const Nav = styled.div`
   display: flex;
   justify-content: space-between;
+  backdrop-filter: blur(10px);
   @media ${device.small} {
     transform-origin: top right;
     transform: rotate(-90deg);
@@ -17,15 +17,11 @@ const Nav = styled.div`
     flex-direction: row-reverse;
   }
 `;
-const Links = styled(Link)`
-  text-decoration: none;
-  width: 100%;
-`;
 
 const NavBar = () => {
   return (
     <Nav>
-      <TabNav href="/work" text="work" />
+      <TabNav href="/menu" text="work" />
       <TabNav href="/about" text="about" />
       <TabNav href="/contact" text="contact" />
     </Nav>

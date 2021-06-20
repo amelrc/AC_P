@@ -13,11 +13,10 @@ const TabWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #0d0b33;
-  backdrop-filter: blur(10px);
   border-top: solid 1px #fdfde5;
   width: 100%;
   &:hover {
-    background-color: transparent;
+    background-color: #fdfde5;
   }
   &:hover ${Tab} {
     color: #0d0b33;
@@ -27,12 +26,6 @@ const TabWrapper = styled.div`
     border-bottom: solid 1px #fdfde5;
     border-top: none;
     background-color: transparent;
-    &:hover {
-      background-color: #0d0b33;
-    }
-    &:hover ${Tab} {
-      color: #fdfde5;
-    }
   }
 `;
 const Links = styled(Link)`

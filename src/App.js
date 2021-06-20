@@ -1,21 +1,45 @@
 import "./styles.css";
+import styled from "styled-components";
+import Logo from "./assets/logo.svg";
 
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch, Link } from "react-router-dom";
 import Nav from "./components/nav";
 import TSS from "./pages/tss";
 import Menu from "./pages/menu";
 import Home from "./pages/home";
 
+const NavBar = styled.div`
+  position: fixed;
+  right: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 100vh;
+  z-index: 1;
+`;
+const LogoWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
 const App = () => {
   return (
-    <div>
+    <div id="app" style={{ overflow: "hidden" }}>
       <HashRouter>
+        <NavBar>
+          <LogoWrapper id="logo wrapper">
+            <Link to="/">
+              <img width="54px" src={Logo} alt="logo" />
+            </Link>
+          </LogoWrapper>
+          <Nav />
+        </NavBar>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/the-side-studio" component={TSS} />
           {/* <Route exact path="/gallery" component={Gallery} /> */}
-          <Nav />
         </Switch>
       </HashRouter>
     </div>

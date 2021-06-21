@@ -5,6 +5,7 @@ import Logo from "./assets/logo.svg";
 import { HashRouter, Route, Switch, Link } from "react-router-dom";
 import Nav from "./components/nav";
 import TSS from "./pages/tss";
+import BSP from "./pages/bsp";
 import Menu from "./pages/menu";
 import Home from "./pages/home";
 
@@ -17,7 +18,7 @@ const NavBar = styled.div`
   justify-content: space-between;
   align-content: space-between;
   height: 100vh;
-  z-index: 1;
+  // z-index: 1;
 `;
 const LogoWrapper = styled.div`
   display: flex;
@@ -29,16 +30,17 @@ const App = () => {
       <HashRouter>
         <NavBar>
           <LogoWrapper id="logo wrapper">
-            <Link to="/">
+            <Link to="/" style={{ backgroundColor: "#0d0b33", height: 54 }}>
               <img width="54px" src={Logo} alt="logo" />
             </Link>
           </LogoWrapper>
           <Nav />
         </NavBar>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/menu/the-side-studio" component={TSS} />
+          <Route exact path="/menu/blue-star-planning" component={BSP} />
           <Route exact path="/menu" component={Menu} />
-          <Route exact path="/the-side-studio" component={TSS} />
+          <Route exact path="/" component={Home} />
           {/* <Route exact path="/gallery" component={Gallery} /> */}
         </Switch>
       </HashRouter>

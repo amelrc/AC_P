@@ -1,5 +1,12 @@
+import Tag from "../components/tag";
+
 const Bsp = () => {
-  return <div>bsp</div>;
+  return (
+    <div>
+      <Tag />
+      <p>bsp</p>
+    </div>
+  );
 };
 
 export default Bsp;

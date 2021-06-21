@@ -50,7 +50,7 @@ const AccSummary = styled.div`
     font: normal normal bold 60px/80px Kumbh Sans;
   }
   @media ${device.small} {
-    font: normal normal bold 70px/90px Kumbh Sans;
+    font: normal normal bold 70px/88px Kumbh Sans;
   }
 `;
 
@@ -100,7 +100,10 @@ const Accordion = () => {
               {clicked === index ? (
                 <AccDetails>
                   {item.answer.map((a, i) => (
-                    <Link style={{ textDecoration: "none" }} to={`/menu/${a}`}>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to={`/menu/${a.replace(/\s/g, "-").toLowerCase()}`}
+                    >
                       <p key={i}>{a}</p>
                     </Link>
                   ))}

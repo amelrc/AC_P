@@ -25,7 +25,7 @@ const TabWrapper = styled.div`
     transform: rotate(180deg);
     border-bottom: solid 1px #fdfde5;
     border-top: none;
-    background-color: transparent;
+    // background-color: transparent;
   }
 `;
 const Links = styled(Link)`

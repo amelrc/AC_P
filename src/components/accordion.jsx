@@ -13,24 +13,22 @@ export const Data = [
     answer: ["Rubrics", "BSP"],
   },
   {
-    question: "Logos",
+    question: "Branding",
     answer: ["Logos"],
   },
 ];
 
 const AccordionSection = styled.div`
   display: flex;
-  // align-items: center;
   justify-content: center;
-  height: 100vh;
-  position: relative;
+  margin-top: 54px;
 `;
 
 const AccordionWrapper = styled.div`
-  position: absolute;
+  // position: absolute;
   width: 90%;
-  margin-top: 25%;
-  z-index: 1;
+  // margin-top: 25%;
+  // z-index: 1;
   @media ${device.tablet} {
     width: 70%;
     margin-top: 15%;
@@ -55,7 +53,7 @@ const AccSummary = styled.div`
 `;
 
 const AccDetails = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,21 +77,15 @@ const AccDetails = styled.div`
 const Accordion = () => {
   const [clicked, setClicked] = useState(false);
 
-  const toggle = (index) => {
-    if (clicked === index) {
-      //if clicked question is already active, then close it
-      return setClicked(null);
-    }
-
-    setClicked(index);
-  };
+  const toggle = (index) =>
+    clicked === index ? setClicked(null) : setClicked(index);
 
   return (
     <AccordionSection>
       <AccordionWrapper>
         {Data.map((item, index) => {
           return (
-            <>
+            <div key={index}>
               <AccSummary onClick={() => toggle(index)} key={index}>
                 {item.question}
               </AccSummary>
@@ -101,15 +93,18 @@ const Accordion = () => {
                 <AccDetails>
                   {item.answer.map((a, i) => (
                     <Link
+                      key={i}
                       style={{ textDecoration: "none" }}
-                      to={`/menu/${a.replace(/\s/g, "-").toLowerCase()}`}
+                      to={`/${item.question.toLowerCase()}/${a
+                        .replace(/\s/g, "-")
+                        .toLowerCase()}`}
                     >
-                      <p key={i}>{a}</p>
+                      <p>{a}</p>
                     </Link>
                   ))}
                 </AccDetails>
               ) : null}
-            </>
+            </div>
           );
         })}
       </AccordionWrapper>

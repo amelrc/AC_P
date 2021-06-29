@@ -12,28 +12,32 @@ const TextWrapper = styled.div`
   align-items: center;
   text-indent: 2px;
   padding: 2px;
-  position: absolute;
+  //   position: relative;
   right: 0;
   &:hover {
     width: 102px;
     span {
-      color: #fff;
+      //   color: #fff;
     }
   }
   span {
-    color: transparent;
+    // color: transparent;
   }
   p {
     margin-top: 2px;
     padding: 4px;
+    width: 1px;
   }
 `;
 
 const Tag = ({ initial, rest }) => {
   return (
-    <div style={{ position: 'relative', height: 30 }}>
+    <div>
       <TextWrapper>
-        <p>{initial}<span>{rest}</span></p>
+        <p>P</p>
+      </TextWrapper>
+      <TextWrapper>
+        <p>{initial}</p>
       </TextWrapper>
     </div>
   );

@@ -9,6 +9,7 @@ import BSP from "./pages/bsp";
 import Menu from "./pages/menu";
 import Home from "./pages/home";
 import Logos from "./pages/logos";
+import Rubrics from "./pages/rubrics";
 
 const NavBar = styled.div`
   position: fixed;
@@ -45,6 +46,7 @@ const App = () => {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/" component={Home} />
           <Route exact path="/branding/logos" component={Logos} />
+          <Route exact path="/software/rubrics" component={Rubrics} />
           {/* <Route exact path="/gallery" component={Gallery} /> */}
         </Switch>
       </HashRouter>

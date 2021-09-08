@@ -1,35 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useViewportScroll, motion, useTransform } from "framer-motion";
-import device from "../generalStyles";
+import device, { TextWrapper } from "../generalStyles";
 import LAPTOP from "../assets/TSS/AC_P_Laptop.svg";
 import LOGO from "../assets/TSS/AC_P_TSS_Logo.svg";
 import HomePage from "../assets/TSS/TSS Landing Page Desktoptss.png";
 import ProjectPage from "../assets/TSS/TSS Project Page Desktotss.png";
-
-const TextWrapper = styled.div`
-  font-family: Kumbh Sans;
-  color: #0d0b33;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: 4%;
-  padding-top: 100px;
-  h3 {
-    font-weight: bold;
-    font-size: 24px;
-  }
-  p {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  @media ${device.tablet} {
-    width: 60%;
-    margin-right: 10%;
-    padding-top: 140px;
-  }
-`;
 
 const LogoTSS = styled(motion.img)`
   width: 40px;

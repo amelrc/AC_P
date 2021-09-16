@@ -35,18 +35,18 @@ const App = () => {
         {/* <NavBar> */}
         <LogoWrapper id="logo wrapper">
           <Link to="/" style={{ backgroundColor: "#0d0b33", height: 54 }}>
-            <img width="54px" src={Logo} alt="logo" />
+            <img width="58px" src={Logo} alt="logo" />
           </Link>
         </LogoWrapper>
         <Nav />
         {/* </NavBar> */}
         <Switch>
           <Route exact path="/website/the-side-studio" component={TSS} />
-          <Route exact path="/website/blue-star-planning" component={BSP} />
-          <Route exact path="/menu" component={Menu} />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/software/blue-star-planning" component={BSP} />
           <Route exact path="/branding/logos" component={Logos} />
           <Route exact path="/software/rubrics" component={Rubrics} />
+          <Route exact path="/menu" component={Menu} />
+          <Route exact path="/" component={Home} />
           {/* <Route exact path="/gallery" component={Gallery} /> */}
         </Switch>
       </HashRouter>

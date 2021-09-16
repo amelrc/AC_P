@@ -1,10 +1,27 @@
 import styled from "styled-components";
 
-const device = {
-  tablet: `(min-width: 768px)`,
-  small: `(min-width: 1024px)`,
-  medium: `(min-width: 1366px)`,
-  large: `(min-width: 1920px)`,
+const size = {
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopM: "1366px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+export const device = {
+  mobileS: `(min-width: ${size.mobileS})`,
+  mobileM: `(min-width: ${size.mobileM})`,
+  mobileL: `(min-width: ${size.mobileL})`,
+  tablet: `(min-width: ${size.tablet})`,
+  laptopV: `(min-width: ${size.laptop})`,
+  laptopH: `(max-width: ${size.laptop})`,
+  laptopM: `(min-width: ${size.laptopM})`,
+  laptopL: `(min-width: ${size.laptopL})`,
+  desktop: `(min-width: ${size.desktop})`,
+  desktopL: `(min-width: ${size.desktop})`,
 };
 export default device;
 
@@ -24,6 +41,7 @@ export const TextWrapper = styled.div`
   margin-left: auto;
   margin-right: 4%;
   padding-top: 100px;
+  max-width: 700px;
   h3 {
     font-weight: bold;
     font-size: 24px;
@@ -37,7 +55,7 @@ export const TextWrapper = styled.div`
     margin-right: 10%;
     padding-top: 140px;
   }
-  @media ${device.small} {
+  @media ${device.laptopV} {
     width: 50%;
     margin-right: 16%;
     padding-top: 140px;

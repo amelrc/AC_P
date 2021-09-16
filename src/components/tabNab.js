@@ -15,13 +15,14 @@ const TabWrapper = styled.div`
   background-color: #0d0b33;
   border-top: solid 1px #fdfde5;
   width: 100%;
+  // margin: 0 1px;
   &:hover {
     background-color: #fdfde5;
   }
   &:hover ${Tab} {
     color: #0d0b33;
   }
-  @media ${device.small} {
+  @media ${device.laptopV} {
     transform: rotate(180deg);
     border-bottom: solid 1px #fdfde5;
     border-top: none;

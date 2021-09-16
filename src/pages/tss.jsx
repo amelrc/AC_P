@@ -10,15 +10,24 @@ import ProjectPage from "../assets/TSS/TSS Project Page Desktotss.png";
 const LogoTSS = styled(motion.img)`
   width: 40px;
   position: absolute;
-  top: 69%;
+  top: 71%;
   @media (orientation: landscape) {
     top: 100%;
   }
   @media ${device.tablet} {
-    top: 55%;
+    top: 54%;
   }
-  @media ${device.small} {
-    top: 60%;
+  @media ${device.tablet} and ${device.laptopH} {
+    top: 53%;
+  }
+  @media ${device.tablet} and ${device.laptopH} and (orientation: landscape) {
+    top: 69%;
+  }
+  @media ${device.laptopV} and (orientation: portrait) {
+    top: 40%;
+  }
+  @media ${device.laptopM} {
+    top: 56%;
   }
 `;
 
@@ -31,24 +40,33 @@ const Laptop = styled(motion.img)`
     width: calc(84% - 54px);
     top: 40%;
   }
-  @media ${device.small} {
+  @media ${device.laptopV} {
     width: calc(75% - 54px);
     top: 26%;
   }
 `;
 
 const Img = styled.img`
-  width: 252px;
-  margin: auto;
-  @media ${device.tablet} {
+  width: 80%;
+  margin: 8% auto;
+  @media ${device.tablet} and ${device.laptopH} {
     width: calc(68% - 54px);
     margin-top: 10%;
+  }
+  @media ${device.tablet} and ${device.laptopH} and (orientation: landscape) {
+    width: calc(61% - 54px);
+    // margin-top: 10%;
+  }
+  @media ${device.laptopV} and ${device.laptopM} {
+    width: calc(61% - 54px);
+    // margin-top: 10%;
   }
 `;
 const ImageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1366px;
   ${Img}:nth-child(4) {
     margin-top: 100px;
     padding-bottom: 300px;
@@ -90,14 +108,17 @@ const Tss = () => {
     return windowDimensions;
   };
 
-  const { height, width } = useWindowDimensions();
-
-  console.log("hello", width);
-
   return (
-    <div>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
       <TextWrapper>
         <h3>THESIDESTUDIO</h3>
+        <h5
+          style={{ color: "#9a9a9a", fontWeight: "normal", margin: "16px 0" }}
+        >
+          Motion Studio
+        </h5>
         <br />
         <p>
           THESIDESTUDIO provides solutions incluiding art direction,
@@ -114,8 +135,8 @@ const Tss = () => {
       </TextWrapper>
 
       <ImageWrapper>
-        <LogoTSS style={{ opacity: opacity }} src={LOGO} alt="logo" />
-        <Laptop ref={ref} src={LAPTOP} alt="laptop frame" />
+        {/* <LogoTSS style={{ opacity: opacity }} src={LOGO} alt="logo" /> */}
+        {/* <Laptop ref={ref} src={LAPTOP} alt="laptop frame" /> */}
         <Img src={HomePage} alt="desktop" />
         <Img src={ProjectPage} alt="project" />
       </ImageWrapper>

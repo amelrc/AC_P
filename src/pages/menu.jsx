@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Accordion from "../components/accordion";
 import styled from "styled-components";
 import device from "../generalStyles";

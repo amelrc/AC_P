@@ -10,14 +10,15 @@ const Nav = styled.div`
   width: 100%;
   bottom: 0;
   z-index: 1;
-  @media ${device.small} {
+  background-color: #fdfde4;
+  @media ${device.laptopV} {
     transform-origin: top right;
     transform: rotate(-90deg);
-    width: calc(100vh - 54px);
+    width: calc(100vh - 58px);
     position: fixed;
-    top: 54px;
-    right: 54px;
-    min-height: 54px;
+    top: 58px;
+    right: 58px;
+    min-height: 58px;
     flex-direction: row-reverse;
     bottom: auto;
   }

@@ -1,6 +1,6 @@
 import device, { TextWrapper } from "../generalStyles";
 import styled from "styled-components";
-import img_rubrics from "../assets/RUB/rubrics.png";
+import img_rubrics from "../images/assets/RUB/rubrics.png";
 
 const ImageWrapper = styled.div`
   width: 100%;

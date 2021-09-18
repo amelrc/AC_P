@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Tag from "../components/tag";
 import { TextWrapper, device } from "../generalStyles";
-import BSP_Ipad from "../assets/BSP/BSP_Ipad@4x.png";
-import All from "../assets/BSP/BSP_ALL.png";
+import BSP_Ipad from "../images/assets/BSP/BSP_Ipad@4x.png";
+import All from "../images/assets/BSP/BSP_ALL.png";
 
 const BG = styled.div`
   background: linear-gradient(

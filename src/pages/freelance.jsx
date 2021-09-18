@@ -1,14 +1,14 @@
 import { TextWrapper, device } from "../generalStyles";
 import styled from "styled-components";
 import { InfoWrapper } from "./bspSoftware";
-import TSS_1 from "../assets/TSS/TSS Landing Page Desktoptss.png";
-import TSS_2 from "../assets/TSS/TSS Project Page Desktotss.png";
-import HF_1 from "../assets/HF/HF_1.png";
-import HF_2 from "../assets/HF/HF_2.png";
-import Font from "../assets/HF/HF_Font.png";
-import Colors from "../assets/HF/HF_colors.png";
-import Influences from "../assets/HF/Influences.svg";
-import StudiateLogin from "../assets/STUDIATE/Studiate_Login.png";
+import TSS_1 from "../images/assets/TSS/TSS Landing Page Desktoptss.png";
+import TSS_2 from "../images/assets/TSS/TSS Project Page Desktotss.png";
+import HF_1 from "../images/assets/HF/HF_1.png";
+import HF_2 from "../images/assets/HF/HF_2.png";
+import Font from "../images/assets/HF/HF_Font.png";
+import Colors from "../images/assets/HF/HF_colors.png";
+import Influences from "../images/assets/HF/Influences.svg";
+import StudiateLogin from "../images/assets/STUDIATE/Studiate_Login.png";
 
 const Title = styled.h2`
   font: bold 24px kumbh Sans;

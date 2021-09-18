@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/amelrc/AC_P/static/css/main.2e50698f.chunk.css",
+    "main.js": "/amelrc/AC_P/static/js/main.ccdc2f71.chunk.js",
+    "main.js.map": "/amelrc/AC_P/static/js/main.ccdc2f71.chunk.js.map",
+    "runtime-main.js": "/amelrc/AC_P/static/js/runtime-main.57f03f90.js",
+    "runtime-main.js.map": "/amelrc/AC_P/static/js/runtime-main.57f03f90.js.map",
+    "static/js/2.1afa8180.chunk.js": "/amelrc/AC_P/static/js/2.1afa8180.chunk.js",
+    "static/js/2.1afa8180.chunk.js.map": "/amelrc/AC_P/static/js/2.1afa8180.chunk.js.map",
+    "index.html": "/amelrc/AC_P/index.html",
+    "static/css/main.2e50698f.chunk.css.map": "/amelrc/AC_P/static/css/main.2e50698f.chunk.css.map",
+    "static/js/2.1afa8180.chunk.js.LICENSE.txt": "/amelrc/AC_P/static/js/2.1afa8180.chunk.js.LICENSE.txt",
+    "static/media/AC_P_Laptop.b7e112d5.svg": "/amelrc/AC_P/static/media/AC_P_Laptop.b7e112d5.svg",
+    "static/media/AC_P_TSS_Logo.2265e9eb.svg": "/amelrc/AC_P/static/media/AC_P_TSS_Logo.2265e9eb.svg",
+    "static/media/BG.ca5de3d5.jpg": "/amelrc/AC_P/static/media/BG.ca5de3d5.jpg",
+    "static/media/BSP_ALL.9665ff78.png": "/amelrc/AC_P/static/media/BSP_ALL.9665ff78.png",
+    "static/media/BSP_Ipad@4x.485f4af6.png": "/amelrc/AC_P/static/media/BSP_Ipad@4x.485f4af6.png",
+    "static/media/HF_1.ecab8ae8.png": "/amelrc/AC_P/static/media/HF_1.ecab8ae8.png",
+    "static/media/HF_2.1859ad14.png": "/amelrc/AC_P/static/media/HF_2.1859ad14.png",
+    "static/media/HF_Font.7cbf8417.png": "/amelrc/AC_P/static/media/HF_Font.7cbf8417.png",
+    "static/media/HF_colors.1051f14b.png": "/amelrc/AC_P/static/media/HF_colors.1051f14b.png",
+    "static/media/Influences.c396428d.svg": "/amelrc/AC_P/static/media/Influences.c396428d.svg",
+    "static/media/Studiate_Login.d6f7fbaa.png": "/amelrc/AC_P/static/media/Studiate_Login.d6f7fbaa.png",
+    "static/media/TSS Landing Page Desktoptss.0b4f5dbe.png": "/amelrc/AC_P/static/media/TSS Landing Page Desktoptss.0b4f5dbe.png",
+    "static/media/TSS Project Page Desktotss.e5d5be47.png": "/amelrc/AC_P/static/media/TSS Project Page Desktotss.e5d5be47.png",
+    "static/media/about.d160b0c4.JPG": "/amelrc/AC_P/static/media/about.d160b0c4.JPG",
+    "static/media/logo.e5d55bce.svg": "/amelrc/AC_P/static/media/logo.e5d55bce.svg",
+    "static/media/rubrics.bf66c78e.png": "/amelrc/AC_P/static/media/rubrics.bf66c78e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57f03f90.js",
+    "static/js/2.1afa8180.chunk.js",
+    "static/css/main.2e50698f.chunk.css",
+    "static/js/main.ccdc2f71.chunk.js"
+  ]
+}

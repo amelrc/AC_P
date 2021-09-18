@@ -12,7 +12,7 @@ const BG = styled.div`
   );
 `;
 
-const SubHeading = styled.h5`
+export const SubHeading = styled.h5`
   color: #9a9a9a;
   font-weight: normal;
   margin: 16px 0;
@@ -32,13 +32,13 @@ const ImageDecor = styled.img`
   margin: 20px auto auto 40%;
 `;
 
-const InfoWrapper = styled.div`
+export const InfoWrapper = styled.div`
   background-color: white;
   padding: 16% 8%;
   font: 16px/24px kumbh Sans;
   color: #0d0b33;
   @media ${device.tablet} {
-    padding: 12% 6%;
+    padding: 6%;
   }
   @media ${device.laptopV} {
     width: calc(80% - 58px);

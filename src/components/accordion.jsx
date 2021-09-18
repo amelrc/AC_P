@@ -145,7 +145,7 @@ const Accordion = () => {
             </div>
           </Link>
         </AccDetails>
-        <AccDetails>
+        {/* <AccDetails>
           <Link style={{ textDecoration: "none" }} to="/software/rubrics">
             <div>
               <h1>Studiate</h1>
@@ -160,7 +160,7 @@ const Accordion = () => {
               </p>
             </div>
           </Link>
-        </AccDetails>
+        </AccDetails> */}
         {/* <AccDetails>
           <Link style={{ textDecoration: "none" }} to="/software/rubrics">
             <div>
@@ -178,7 +178,7 @@ const Accordion = () => {
           </Link>
         </AccDetails> */}
         <AccDetails>
-          <Link style={{ textDecoration: "none" }} to="/software/rubrics">
+          <Link style={{ textDecoration: "none" }} to="/freelance">
             <div>
               <h1>Freelance</h1>
               <p

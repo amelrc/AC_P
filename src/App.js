@@ -12,6 +12,7 @@ import Contact from "./pages/contact";
 import Home from "./pages/home";
 import Logos from "./pages/logos";
 import Rubrics from "./pages/rubrics";
+import Freelance from "./pages/freelance";
 
 const NavBar = styled.div`
   position: fixed;
@@ -43,10 +44,11 @@ const App = () => {
         <Nav />
         {/* </NavBar> */}
         <Switch>
-          <Route exact path="/website/the-side-studio" component={TSS} />
+          {/* <Route exact path="/website/the-side-studio" component={TSS} /> */}
           <Route exact path="/software/blue-star-planning" component={BSP} />
           <Route exact path="/branding/logos" component={Logos} />
           <Route exact path="/software/rubrics" component={Rubrics} />
+          <Route exact path="/freelance" component={Freelance} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />

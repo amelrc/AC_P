@@ -20,8 +20,8 @@ const LogoWrapper = styled.div`
 `;
 const App = () => {
   return (
-    <div id="app">
-      <HashRouter>
+    <HashRouter>
+      <div id="app">
         <LogoWrapper id="logo wrapper">
           <Link to="/" style={{ backgroundColor: "#0d0b33", height: 54 }}>
             <img width="58px" src={Logo} alt="logo" />
@@ -38,8 +38,8 @@ const App = () => {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/" component={Home} />
         </Switch>
-      </HashRouter>
-    </div>
+      </div>
+    </HashRouter>
   );
 };
 export default App;

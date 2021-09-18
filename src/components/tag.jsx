@@ -1,43 +1,24 @@
 import styled from "styled-components";
 
 const TextWrapper = styled.div`
-  background-color: #9398ff;
-  width: 20px;
+  ${(props) => `background-color: ${props.bgColor};`}
+  width: 100%;
   height: 20px;
   font: bold 14px/12px Kumbh Sans;
   color: #fdfde5;
-  transition: width 0.5s ease-in-out;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
   text-indent: 2px;
   padding: 2px;
-  //   position: relative;
-  right: 0;
-  &:hover {
-    width: 102px;
-    span {
-      //   color: #fff;
-    }
-  }
-  span {
-    // color: transparent;
-  }
   p {
-    margin-top: 2px;
     padding: 4px;
-    width: 1px;
   }
 `;
 
-const Tag = ({ initial, rest }) => {
+const Tag = ({ word, bgColor }) => {
   return (
-    <div>
-      <TextWrapper>
-        <p>P</p>
-      </TextWrapper>
-      <TextWrapper>
-        <p>{initial}</p>
+    <div style={{ margin: 4 }}>
+      <TextWrapper bgColor={bgColor}>
+        <p>{word}</p>
       </TextWrapper>
     </div>
   );

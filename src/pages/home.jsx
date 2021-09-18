@@ -13,9 +13,9 @@ const NavWrapper = styled.div`
   height: 100vh;
   display: flex;
   align-items: flex-end;
-
   @media ${device.tablet} {
-    margin: auto 50%;
+    margin: auto 8% auto auto;
+    justify-content: flex-end;
   }
 `;
 
@@ -30,6 +30,9 @@ to {
 
 const TextWrapper = styled.div`
   margin: 20% 10%;
+  @media ${device.tablet} {
+    margin-bottom: 8%;
+  }
 `;
 
 const H2 = styled.h2`

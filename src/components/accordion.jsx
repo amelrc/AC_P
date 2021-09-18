@@ -180,7 +180,7 @@ const Accordion = () => {
         <AccDetails>
           <Link style={{ textDecoration: "none" }} to="/software/rubrics">
             <div>
-              <h1>Websites</h1>
+              <h1>Freelance</h1>
               <p
                 style={{
                   font: "18px Kumbh Sans",
@@ -188,18 +188,18 @@ const Accordion = () => {
                   margin: "8px auto",
                 }}
               >
-                Selected
+                Selected Freelance Projects
               </p>
             </div>
           </Link>
         </AccDetails>
-        <AccDetails>
+        {/* <AccDetails>
           <Link style={{ textDecoration: "none" }} to="/software/rubrics">
             <div>
               <h1>Branding</h1>
             </div>
           </Link>
-        </AccDetails>
+        </AccDetails> */}
       </AccordionWrapper>
     </AccordionSection>
   );

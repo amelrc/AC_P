@@ -5,8 +5,10 @@ import Logo from "./assets/logo.svg";
 import { HashRouter, Route, Switch, Link } from "react-router-dom";
 import Nav from "./components/nav";
 import TSS from "./pages/tss";
-import BSP from "./pages/bsp";
+import BSP from "./pages/bspSoftware";
 import Menu from "./pages/menu";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 import Home from "./pages/home";
 import Logos from "./pages/logos";
 import Rubrics from "./pages/rubrics";
@@ -30,7 +32,7 @@ const LogoWrapper = styled.div`
 `;
 const App = () => {
   return (
-    <div id="app" style={{}}>
+    <div id="app">
       <HashRouter>
         {/* <NavBar> */}
         <LogoWrapper id="logo wrapper">
@@ -46,6 +48,8 @@ const App = () => {
           <Route exact path="/branding/logos" component={Logos} />
           <Route exact path="/software/rubrics" component={Rubrics} />
           <Route exact path="/menu" component={Menu} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
           <Route exact path="/" component={Home} />
           {/* <Route exact path="/gallery" component={Gallery} /> */}
         </Switch>

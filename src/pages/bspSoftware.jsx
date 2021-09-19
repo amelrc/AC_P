@@ -79,10 +79,12 @@ const Bsp = () => {
       <InfoWrapper>
         <SubHeading>Overview</SubHeading>
         <p>
-          BSP is an APS-software that complements companies' ERP systems. This
-          solution fits within production companies, system integrators, and
-          industrial automation for various manufacturing industries. It
-          includes advanced algorithms that monitors a production environment.
+          BSP (Blue Star Planning) is an APS-software that complements
+          companies' ERP systems. This solution is tailored for production
+          companies, system integrators, and industrial automation for
+          manufacturing industries. It uses advanced algorithms to monitor the
+          production environment. The main problem this application addresses is
+          how to maximize productivity through automated production planning.
         </p>
         <br />
         <p>

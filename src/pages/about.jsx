@@ -59,26 +59,26 @@ const About = () => {
         <img width="96%" src={AboutImage} alt="yo" />
         <h3>About</h3>
         <p style={{ fontWeight: "bold" }}>
-          Hi, I’m Amel. I'm a multi-talented individual with over 10+ years of
+          Hi, I’m Amel – a multi-talented individual with over 10+ years of
           experiences in wide range of disciplines.
         </p>
         <p>
-          From fine arts to design to programming, I've traversed between
-          graphic desing, UI, UX; painting the net through making software and
-          web applications. Apart from being a multi-disciplinary maker, I'm an
-          advisor, entrepreneur, front-end developer, sea live protector,
-          traveler, and more.
+          From fine arts to design to programming, I've traversed from sculpture
+          and painting, to graphic design, UI and UX, to developing software and
+          web applications. Apart from being a multi-disciplinary creator, I'm
+          an advisor, entrepreneur, and front-end developer with interests in
+          sea life protection, travelling, and so much more.
         </p>
         <p>
           I don’t like to define myself by the work I’ve done. I define myself
-          by the work I want to do. I prefer to keep learning, continue
-          challenging myself, and do interesting things that matter.
+          by the work I want to do. I have a desire to learn continuously
+          through new challenges and do interesting things that matter.
         </p>
         <p>
-          Fueled by the good in people, I’m easily inspired, passionate,
-          expressive, multi-talented spirit with a natural ability to entertain
-          and inspire. I’m never satisfied to just come up with ideas. Instead I
-          have an almost impulsive need to act on them.
+          Fuelled by the good in people, I’m easily inspired, passionate and
+          expressive with a natural ability to entertain and motivate. I’m never
+          satisfied with ideas alone, instead I have an impulsive need to act on
+          them.
         </p>
       </TextWrapper>
     </MenuWrapper>

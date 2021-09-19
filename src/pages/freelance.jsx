@@ -40,12 +40,12 @@ const Freelance = () => {
         </h5>
         <br />
         <p>
-          This is a selection of projects I have worked in the past decade. As a
-          self-employed designer I had a chance to meet and work with very
-          talented people. These projects are mostly start-ups companies, where
-          I was being challenged to build the right features for the right
-          users. I've grown as designer and developer, by researching, advising,
-          consulting people to bring their product alive.
+          Here is a selection of projects I have worked in the past decade. As a
+          self-employed designer and developer I have been fortunate to meet and
+          work with very talented people. These projects require me to identify
+          and build the right features for the right users. Bringing these
+          products to life has allowed me to grow through the researching,
+          advising, consulting of people.
         </p>
       </TextWrapper>
       {/* //// */}
@@ -53,13 +53,12 @@ const Freelance = () => {
         <Title>TheSideStudio</Title>
         <br />
         <p>
-          TheSideStudio provides solutions and assistance with a wide range of
-          projects varying from creative direction, art direction,
-          cinematography, 3D design & animation, concept creation, VFX and
-          illustration. It focus and specialize on product visualization, 3D
+          TheSideStudio focuses and specializes on product visualization, 3D
           models, simulations and interactive experiences for media platforms,
           film and live events.
         </p>
+        <br />
+        <p>I was brought on to create their website’s design.</p>
 
         <div style={{ padding: "8% 0" }}>
           <img
@@ -78,12 +77,9 @@ const Freelance = () => {
         <Title>Hidden Focus</Title>
         <br />
         <p>
-          TheSideStudio provides solutions and assistance with a wide range of
-          projects varying from creative direction, art direction,
-          cinematography, 3D design & animation, concept creation, VFX and
-          illustration. It focus and specialize on product visualization, 3D
-          models, simulations and interactive experiences for media platforms,
-          film and live events.
+          Hidden Focus is an online photo gallery for photographer Ray Hanson. I
+          worked with Ray to design and build this highly customized website,
+          including the development of a logo and an original font.
         </p>
         <div style={{ padding: "8% 0" }}>
           <FontColorWrapper>
@@ -110,12 +106,13 @@ const Freelance = () => {
         <Title>Studiate</Title>
         <br />
         <p>
-          Studiate takes care of scheduling, invoicing, payments, and
-          bookkeeping for teachers. It allows teachers to set their availability
-          and students to make appointments in teacher's available timeslots
-          while permiting to schedule and re-schedule students while
-          simultaneously notifying them.
+          Studiate is a program that takes care of scheduling, invoicing,
+          payments, and bookkeeping for freelance teachers. It allows them to
+          set their availability so students can make appointments in their
+          available timeslots.
         </p>
+        <br />
+        <p>Studiate asked me to support their user experience and design.</p>
         <Image width="100%" src={StudiateLogin} alt="TSS_Landing" />
       </InfoWrapper>
     </div>

@@ -23,15 +23,15 @@ const Rubrics = () => {
         <br />
         <p>
           Leon van Gelder is a High-school in Groningen that uses a grading
-          system based on rubrics. This means students review each other’s
-          skills instead of the ordinary grading system.
+          system based on rubrics. Students review each other’s skills with the
+          use of rubrics, in place of the typical grading system we are all
+          familiar with.
         </p>
         <br />
         <p>
-          The app had a really basic layout and was not user-friendly. My job
-          was to program the UI in pure vanilla javascript. The app is optimised
-          for the Microsoft Surface Go which was the device used by all school
-          personnel.
+          I was brought on to improve the UI, which I did using pure vanilla
+          javascript. The app is optimised for the Microsoft Surface Go, the
+          device used by all school personnel.
         </p>
       </TextWrapper>
 

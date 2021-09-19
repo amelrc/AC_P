@@ -95,10 +95,10 @@ const About = () => {
         <h1>Let's make something great!</h1>
         <h3>Contact</h3>
         <p>
-          I'm seeking out opportunities to collaborate with companies / agencies
-          / individuals to bring my experience to the table where we can work
-          together to solve real business-problems in a way that optimizes all
-          of our respective experience and knowledge.
+          I'm seeking out opportunities to collaborate with people, companies
+          and agencies. Bring your ideas to me, I would love the chance to pitch
+          my experience to collaborate with you. Let’s solve life and business
+          problems together.
         </p>
         <ContactWrapper>
           <p style={{ margin: "4% 0 4% 8%" }}>Feel free to reach out at</p>

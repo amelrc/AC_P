@@ -80,11 +80,6 @@ const About = () => {
           and inspire. I’m never satisfied to just come up with ideas. Instead I
           have an almost impulsive need to act on them.
         </p>
-        <input
-          ref={textAreaRef}
-          value="amelrc@gmail.com"
-          onClick={copyToClipboard}
-        />
       </TextWrapper>
     </MenuWrapper>
   );

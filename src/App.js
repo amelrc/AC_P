@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "./images/assets/logo.svg";
+import Logo from "./images/assets/LOGOS/logo.svg";
 import { HashRouter, Route, Switch, Link } from "react-router-dom";
 import Nav from "./components/nav";
 import BSP from "./pages/bspSoftware";

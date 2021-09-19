@@ -1,8 +1,8 @@
-import { AC } from "../images/assets/ac.js";
-import { BSP } from "../images/assets/bsp.js";
-import { CWSLA } from "../images/assets/cwsla.js";
-import { HF } from "../images/assets/hf.js";
-import { WAG } from "../images/assets/wag.js";
+import { AC } from "../images/assets/LOGOS/ac.js";
+import { BSP } from "../images/assets/LOGOS/bsp.js";
+import { CWSLA } from "../images/assets/LOGOS/cwsla.js";
+import { HF } from "../images/assets/LOGOS/hf.js";
+import { WAG } from "../images/assets/LOGOS/wag.js";
 import styled from "styled-components";
 import device from "../generalStyles";
 

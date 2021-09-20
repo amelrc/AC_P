@@ -69,11 +69,6 @@ const About = () => {
     "Sass",
   ];
 
-  const copyToClipboard = () => {
-    textAreaRef.current.select();
-    document.execCommand("copy");
-  };
-
   return (
     <MenuWrapper>
       <TextWrapper style={{ width: "100%" }}>

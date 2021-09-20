@@ -83,8 +83,7 @@ const Bsp = () => {
           companies' ERP systems. This solution is tailored for production
           companies, system integrators, and industrial automation for
           manufacturing industries. It uses advanced algorithms to monitor the
-          production environment. The main problem this application addresses is
-          how to maximize productivity through automated production planning.
+          production environment.
         </p>
         <br />
         <p>

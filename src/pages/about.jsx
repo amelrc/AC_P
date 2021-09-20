@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { MenuWrapper } from "../pages/menu";
 import AboutImage from "../images/about.JPG";
 import { device } from "../generalStyles";
+import Tag from "../components/tag";
 
 export const TextWrapper = styled.div`
   font-family: Kumbh Sans;
@@ -46,6 +47,27 @@ export const TextWrapper = styled.div`
 
 const About = () => {
   const textAreaRef = useRef(null);
+  const designTools = [
+    "Adobe CC",
+    "Sketch",
+    "Figma",
+    "Abstract",
+    "Framer",
+    "Whimsical",
+  ];
+  const programmingTools = [
+    "HTML",
+    "CSS",
+    "JavasScript",
+    "React",
+    "Vue",
+    "Typescript",
+    "NextJS",
+    "JSS",
+    "Material UI",
+    "BEM",
+    "Sass",
+  ];
 
   const copyToClipboard = () => {
     textAreaRef.current.select();
@@ -80,6 +102,17 @@ const About = () => {
           satisfied with ideas alone, instead I have an impulsive need to act on
           them.
         </p>
+        <p>These are the tools I got with me:</p>
+        <div style={{ display: "flex", flexWrap: "wrap", margin: "4% 8%" }}>
+          {designTools.map((el, i) => (
+            <Tag key={i} word={el} bgColor={"#9398ff"} />
+          ))}
+        </div>
+        <div style={{ display: "flex", flexWrap: "wrap", margin: "4% 8%" }}>
+          {programmingTools.map((el, i) => (
+            <Tag key={i} word={el} bgColor={"#ff3b6d"} />
+          ))}
+        </div>
       </TextWrapper>
     </MenuWrapper>
   );

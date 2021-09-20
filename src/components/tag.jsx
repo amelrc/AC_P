@@ -9,7 +9,7 @@ const TextWrapper = styled.div`
   border-radius: 12px;
   text-indent: 2px;
   padding: 2px;
-  p {
+  div {
     padding: 4px;
   }
 `;
@@ -18,7 +18,7 @@ const Tag = ({ word, bgColor }) => {
   return (
     <div style={{ margin: 4 }}>
       <TextWrapper bgColor={bgColor}>
-        <p>{word}</p>
+        <div>{word}</div>
       </TextWrapper>
     </div>
   );

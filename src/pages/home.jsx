@@ -1,4 +1,4 @@
-import Image from "../images/BG.jpg";
+import Image from "../images/AC_BG.svg";
 import styled from "styled-components";
 import { device } from "../generalStyles";
 import { keyframes } from "styled-components";

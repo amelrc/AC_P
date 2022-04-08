@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Logo from "./images/assets/LOGOS/logo.svg";
-import { HashRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Nav from "./components/nav";
 import BSP from "./pages/bspSoftware";
 import Menu from "./pages/menu";
@@ -20,7 +20,7 @@ const LogoWrapper = styled.div`
 `;
 const App = () => {
   return (
-    <HashRouter>
+    <Router>
       <div id="app">
         <LogoWrapper id="logo wrapper">
           <Link to="/" style={{ backgroundColor: "#0d0b33", height: 54 }}>
@@ -39,7 +39,7 @@ const App = () => {
           <Route exact path="/" component={Home} />
         </Switch>
       </div>
-    </HashRouter>
+    </Router>
   );
 };
 export default App;

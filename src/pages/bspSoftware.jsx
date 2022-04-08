@@ -89,8 +89,8 @@ const Bsp = () => {
         <p>
           The main issue this application solves is to maximize productivity by
           creating an automated production planning. The biggest challenge was
-          to display as much data for as possible, however, without overcrowding
-          the interface.
+          to display as much data as possible, however, without overcrowding the
+          interface.
         </p>
         <SubHeading>What I did</SubHeading>
         <div style={{ display: "flex", flexWrap: "wrap" }}>

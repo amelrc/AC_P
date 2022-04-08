@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import Accordion from "../components/accordion";
+// import { Link } from "react-router-dom";
+// import Accordion from "../components/accordion";
 import styled from "styled-components";
 import device, { TextWrapper } from "../generalStyles";
 import img_rubrics from "../images/7R_AC.png";

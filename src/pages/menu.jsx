@@ -24,18 +24,24 @@ export const MenuWrapper = styled.div`
 `;
 
 const Header1 = styled.h1`
-  font-size: 100px;
+  font-size: 12vw;
   font-weight: 500;
   color: #fdfde5;
   padding: 20% 10%;
+  @media ${device.tablet} {
+    font-size: 5rem;
+  }
 `;
 
 const Header2 = styled.h2`
-  font-size: 80px;
+  font-size: 10vw;
   font-weight: 300;
   color: #fdfde5;
   // text-align: center;
   padding: 0% 10%;
+  @media ${device.tablet} {
+    font-size: 4rem;
+  }
 `;
 
 const Header3 = styled.h3`

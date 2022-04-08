@@ -27,7 +27,7 @@ const Nav = styled.div`
 const NavBar = () => {
   return (
     <Nav>
-      <TabNav href="/menu" text="work" />
+      <TabNav href="/work" text="work" />
       <TabNav href="/about" text="about" />
       <TabNav href="/contact" text="contact" />
     </Nav>

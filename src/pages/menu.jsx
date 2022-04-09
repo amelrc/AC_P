@@ -5,6 +5,7 @@ import device, { TextWrapper } from "../generalStyles";
 import img_rubrics from "../images/7R_AC.png";
 import img_BSP1 from "../images/4BSP_AC.png";
 import img_BSP2 from "../images/5BSP_ACresized.png";
+import img_BSP6 from "../images/6BSP_AC.png";
 import img_D1 from "../images/1D_AC.png";
 import img_D2 from "../images/2D_AC.png";
 import img_D3 from "../images/3D_AC.png";
@@ -111,6 +112,12 @@ const Menu = () => {
           width="80%"
           style={{ margin: "1% 0" }}
           src={img_BSP2}
+          alt="desktop"
+        />
+        <img
+          width="80%"
+          style={{ margin: "1% 0" }}
+          src={img_BSP6}
           alt="desktop"
         />
       </ImageWrapper>

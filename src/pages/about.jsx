@@ -48,12 +48,19 @@ export const TextWrapper = styled.div`
 const About = () => {
   const textAreaRef = useRef(null);
   const designTools = [
+    "UI",
+    "UX",
     "Adobe CC",
     "Sketch",
     "Figma",
     "Abstract",
     "Framer",
     "Whimsical",
+    "Information Architecture",
+    "Journey Mapping",
+    "Usability Testing",
+    "Mobile UX Design",
+    "Accessibility",
   ];
   const programmingTools = [
     "HTML",
@@ -67,6 +74,8 @@ const About = () => {
     "Material UI",
     "BEM",
     "Sass",
+    "Strapi",
+    "Contentful",
   ];
 
   return (
@@ -84,7 +93,7 @@ const About = () => {
           and painting, to graphic design, UI and UX, to developing software and
           web applications. Apart from being a multi-disciplinary creator, I'm
           an advisor, entrepreneur, and front-end developer with interests in
-          sea life protection, travelling, and so much more.
+          sea life protection, travelling, and much more.
         </p>
         <p>
           I don’t like to define myself by the work I’ve done. I define myself
@@ -97,13 +106,35 @@ const About = () => {
           satisfied with ideas alone, instead I have an impulsive need to act on
           them.
         </p>
-        <p>These are the tools I got with me:</p>
-        <div style={{ display: "flex", flexWrap: "wrap", margin: "4% 8%" }}>
+        <p>Current know-hows and skills in me:</p>
+
+        <p
+          style={{
+            fontWeight: 100,
+            borderBottom: "solid 1px #fdfde5",
+            margin: "2% 8%",
+          }}
+        >
+          DESIGNER
+        </p>
+        <div
+          style={{ display: "flex", flexWrap: "wrap", margin: "2% 8% 4% 8%" }}
+        >
           {designTools.map((el, i) => (
             <Tag key={i} word={el} bgColor={"#9398ff"} />
           ))}
         </div>
-        <div style={{ display: "flex", flexWrap: "wrap", margin: "4% 8%" }}>
+
+        <p
+          style={{
+            fontWeight: 100,
+            borderBottom: "solid 1px #fdfde5",
+            margin: "2% 8%",
+          }}
+        >
+          FRONT-END DEVELOPER
+        </p>
+        <div style={{ display: "flex", flexWrap: "wrap", margin: "2% 8%" }}>
           {programmingTools.map((el, i) => (
             <Tag key={i} word={el} bgColor={"#ff3b6d"} />
           ))}

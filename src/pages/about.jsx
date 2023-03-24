@@ -56,6 +56,7 @@ const About = () => {
     "Abstract",
     "Framer",
     "Whimsical",
+    "Design System",
     "Information Architecture",
     "Journey Mapping",
     "Usability Testing",

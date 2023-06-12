@@ -1,9 +1,15 @@
 import MemojiMe from "../images/Memoji.svg";
+import ScrollArrow from "../images/Scroll_Arrow.svg";
 import styled from "styled-components";
 import { device } from "../generalStyles";
 import { keyframes } from "styled-components";
 
-const TextWrapper = styled.div``;
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+`;
 
 const H1 = styled.h1`
   font-family: "SF UI Display Bold";
@@ -42,75 +48,22 @@ const P4 = styled.p`
   text-align: center;
 `;
 
-const MemojiWrapper = styled.div`
-  clip-path: ellipse(40% 42% at 50% 50%);
-  background: linear-gradient(240.24deg, #c1c5ce 19.65%, #dee1e8 74.2%);
-  // transform: rotate(-31.78deg);
-  width: 200px;
-  height: 232px;
-`;
-const NavWrapper = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: flex-end;
-  @media ${device.tablet} {
-    margin: auto 8% auto auto;
-    justify-content: flex-end;
-  }
+const Memoji = styled.img`
+  width: 50%;
+  max-width: 200px;
 `;
 
-const slideInFromLeft = keyframes`
-from {
-  width: 0;
-}
-to {
-  width: 400px;
-}
-`;
-
-// const TextWrapper = styled.div`
-//   margin: 20% 10%;
-//   @media ${device.tablet} {
-//     margin-bottom: 8%;
-//   }
-// `;
-
-const H2 = styled.h2`
-  font-family: "Roxborough Thin";
-  padding-left: 16px;
-  width: 120%;
-  @media ${device.tablet} {
-    // animation: ${slideInFromLeft} 0.3s linear;
-    // font: bold 90px Kumbh Sans;
-
-    width: 400px;
-  }
-`;
-
-const H2Dark = styled(H2)`
-  background-color: #0d0b33;
-  color: #fdfde5;
-`;
-const H2LightA = styled(H2)`
-  background-color: #fdfde5;
-  color: #0d0b33;
-  width: 80%;
-`;
-const H2Light = styled(H2)`
-  background-color: #fdfde5;
-  color: #0d0b33;
+const Text = styled.p`
+  font-family: "SF UI Display Thin";
+  font-size: 1rem;
+  line-height: 19px;
+  color: #230808;
 `;
 
 const Home = () => {
   return (
-    <div id="bg">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+    <div>
+      <TextWrapper>
         <div style={{ color: "#36003A" }}>
           <H1>Full Stack Designer</H1>
           <P1>Intersecting</P1>
@@ -118,16 +71,13 @@ const Home = () => {
           <P3>&</P3>
           <P4>Functionality</P4>
         </div>
-        <img src={MemojiMe} width={"50%"} alt="memoji of myself" />
-      </div>
-
-      <NavWrapper>
-        <TextWrapper>
-          <H2Dark>Hola!</H2Dark>
-          <H2LightA>I'm</H2LightA>
-          <H2Light>Amel</H2Light>
-        </TextWrapper>
-      </NavWrapper>
+        <Memoji src={MemojiMe} alt="memoji of myself" />
+      </TextWrapper>
+      <Text>
+        Based in The Netherlands but working worldwide. partnering with local
+        and international clients that value design just as much as I do.
+      </Text>
+      {/* <img src={ScrollArrow} alt="arrow indicating to scroll down" /> */}
     </div>
   );
 };

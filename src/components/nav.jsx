@@ -1,37 +1,33 @@
 import device from "../generalStyles";
-import TabNav from "./tabNab";
+import Logo from "../images/Logo.svg";
+import ResizableWord from "./ResizableWord";
 import styled from "styled-components";
 
-const Nav = styled.div`
-  display: flex;
-  justify-content: space-between;
-  backdrop-filter: blur(10px);
-  position: fixed;
+const Nav = styled.nav`
+  display: grid;
+  grid-template-columns: 1fr 60% 1fr;
+  justify-items: center;
+  padding: 16px 0;
+  align-items: center;
   width: 100%;
-  bottom: 0;
-  z-index: 1;
-  background-color: #fdfde4;
-  @media ${device.laptopV} {
-    transform-origin: top right;
-    transform: rotate(-90deg);
-    width: calc(100vh - 58px);
-    position: fixed;
-    top: 58px;
-    right: 58px;
-    min-height: 58px;
-    flex-direction: row-reverse;
-    bottom: auto;
-  }
 `;
 
-const NavBar = () => {
+const NavTop = ({ style }) => {
   return (
-    <Nav>
-      <TabNav href="/work" text="work" />
-      <TabNav href="/about" text="about" />
-      <TabNav href="/contact" text="contact" />
+    <Nav style={style}>
+      <ResizableWord href="/" navitem={"work"} />
+      <img src={Logo} alt="Amel Caballero Design Logo" />
+      <ResizableWord href="/" navitem={"services"} />
+    </Nav>
+  );
+};
+const NavBot = ({ style }) => {
+  return (
+    <Nav style={style}>
+      <ResizableWord href="/" navitem={"about"} />
+      <ResizableWord style={{ gridColumn: 3 }} href="/" navitem={"contact"} />
     </Nav>
   );
 };
 
-export default NavBar;
+export { NavBot, NavTop };
